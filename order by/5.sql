@@ -1,0 +1,1 @@
+select delivery_city ,order_amount from orders order by delivery_city asc;
