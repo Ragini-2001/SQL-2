@@ -1,0 +1,2 @@
+select product_name from product where product_id in (select oi.product_id from order_item oi join orders o on oi.
+order_id= o.order_id join customer c on o.customer_id=c.customer_id where c.city= 'pune');

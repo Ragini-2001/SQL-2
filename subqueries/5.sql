@@ -1,0 +1,2 @@
+select customer_name from customer where customer_id in (select o.customer_id from orders o join order_item oi on
+o.order_id=oi.order_id join product p on oi.product_id=p.product_id where p.price>30000)
