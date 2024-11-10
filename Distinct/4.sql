@@ -1,0 +1,1 @@
+select distinct product_name from products ;
